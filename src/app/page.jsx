@@ -5,7 +5,8 @@ import Services from "@/components/Services";
 import Carousel from "@/components/Carousel";
 import Achievements from "@/components/Achievements";
 import EmblaCarousel from "@/components/EmblaCarousel";
-import Table from "@/components/Table";
+import PersonalMessage from "@/components/PersonalMessage";
+import EmblaCarouselTwo from "@/components/EmblaCarouselTwo";
 
 export default function Home() {
   const slides = [
@@ -29,7 +30,8 @@ export default function Home() {
       <Carousel slides={slides} />
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       <Achievements />
-      <Table />
+      <PersonalMessage />
+      <EmblaCarouselTwo slides={SLIDES} options={OPTIONS} />
     </>
   );
 }

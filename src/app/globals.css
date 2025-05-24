@@ -22,6 +22,16 @@ h6 {
   font-family: var(--font-outfit);
 }
 
+@layer utilities {
+  .rotate-x-360 {
+    transform: rotateX(360deg);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .stroke-text {
   color: white;
   -webkit-text-fill-color: transparent;
@@ -49,6 +59,26 @@ h6 {
   background: #181a1c;
   padding: 30px;
   border-radius: 0.5em;
+}
+
+.service-boxthree {
+  display: inline-block;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 0.5em;
+}
+
+.service-boxthree::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, white, pink, violet, purple, blue);
 }
 
 .service-box::after {
@@ -89,7 +119,7 @@ h6 {
 }
 
 .embla {
-  max-width: 48rem;
+  max-width: 100%;
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
@@ -103,14 +133,15 @@ h6 {
 .embla__container {
   display: flex;
   touch-action: pan-y pinch-zoom;
-  margin-left: calc(var(--slide-spacing) * -1);
 }
 
 .embla__slide {
   transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
-  min-width: 0;
-  padding-left: var(--slide-spacing);
+  min-width: 50%;
+  padding: var(--slide-spacing);
+  height: 470px;
+  align-items: center;
 }
 
 .embla__slide__number {
@@ -120,7 +151,6 @@ h6 {
   font-size: 4rem;
   font-weight: 600;
   color: white;
-  background-image: url(../../public/home/portfolio-1.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,10 +161,11 @@ h6 {
 .embla__controls {
   display: grid;
   grid-template-columns: auto 1fr;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1.2rem;
-  margin-top: 1.8rem;
+  margin-top: 1rem;
 }
+
 .embla__buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

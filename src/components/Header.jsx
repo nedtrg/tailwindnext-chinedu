@@ -44,17 +44,17 @@ export default function Header() {
         </h1>
         <div className="flex space-x-3 text-white text-left pb-12">
           <Link href="/">
-            <button className="p-3 bg-gray-800 rounded-full border-2 border-transparent text-white">
+            <button className="p-3 rounded-full border-2 border-transparent text-white bg-gray-800/50 border-gray-700 hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300">
               <IconBrandFacebook stroke={2} width={20} height={20} />
             </button>
           </Link>
           <Link href="/">
-            <button className="p-3 bg-gray-800 rounded-full border-2 border-transparent text-white">
+            <button className="p-3 rounded-full border-2 border-transparent text-white bg-gray-800/50 border-gray-700 hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300">
               <IconBrandTwitter stroke={2} width={20} height={20} />
             </button>
           </Link>
           <Link href="/">
-            <button className="p-3 bg-gray-800 rounded-full border-2 border-transparent text-white">
+            <button className="p-3 rounded-full border-2 border-transparent text-white bg-gray-800/50 border-gray-700 hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300">
               <IconBrandInstagram stroke={2} width={20} height={20} />
             </button>
           </Link>
