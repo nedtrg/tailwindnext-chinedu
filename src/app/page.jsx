@@ -7,6 +7,9 @@ import Achievements from "@/components/Achievements";
 import EmblaCarousel from "@/components/EmblaCarousel";
 import PersonalMessage from "@/components/PersonalMessage";
 import EmblaCarouselTwo from "@/components/EmblaCarouselTwo";
+import LetsTalk from "@/components/LetsTalk";
+import MapSection from "@/components/MapSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const slides = [
@@ -32,6 +35,9 @@ export default function Home() {
       <Achievements />
       <PersonalMessage />
       <EmblaCarouselTwo slides={SLIDES} options={OPTIONS} />
+      <LetsTalk />
+      <MapSection />
+      <Footer />
     </>
   );
 }

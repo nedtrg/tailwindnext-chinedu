@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useCallback } from "react";
+import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import styles from "./css/Carousel.module.css";
 import Image from "next/image";
@@ -17,13 +17,31 @@ const Carousel = ({ slides }) => {
   }, [emblaApi]);
 
   return (
-    <div className={`${styles.embla} pb-20 `}>
+    <div className={`${styles.embla} pb-12 sm:pb-16 lg:pb-20 px-4`}>
       <div className={styles.embla__viewport} ref={emblaRef}>
         <div className={styles.embla__container}>
           {slides.map((slide, index) => (
-            <div className={styles.embla__slide} key={index}>
+            <div
+              key={index}
+              className={`
+                ${styles.embla__slide}
+                flex
+                justify-center
+                flex-[0_0_100%]
+                sm:flex-[0_0_auto]
+              `}
+            >
               <div
-                className={`${styles.embla__slide__inner} relative group w-[100px] h-[100px] overflow-hidden`}
+                className={`
+                  ${styles.embla__slide__inner}
+                  relative
+                  group
+                  overflow-hidden
+                  w-24 h-24
+                  sm:w-24 sm:h-24
+                  md:w-28 md:h-28
+                  lg:w-[100px] lg:h-[100px]
+                `}
               >
                 <Link href="/">
                   <Image
@@ -31,7 +49,16 @@ const Carousel = ({ slides }) => {
                     alt={`Slide ${index}`}
                     width={100}
                     height={100}
-                    className={`${styles.embla__slide__img} transition duration-500 w-full h-full group-hover:brightness-150 group-hover:drop-shadow-[0_0_1px_white]`}
+                    className={`
+                      ${styles.embla__slide__img}
+                      w-full
+                      h-full
+                      object-cover
+                      transition
+                      duration-500
+                      group-hover:brightness-150
+                      group-hover:drop-shadow-[0_0_1px_white]
+                    `}
                   />
                 </Link>
               </div>
@@ -39,12 +66,8 @@ const Carousel = ({ slides }) => {
           ))}
         </div>
       </div>
-      {/* <button className={styles.embla__button} onClick={scrollPrev}>
-        <span className="text-white">Prev</span>
-      </button>
-      <button className={styles.embla__button} onClick={scrollNext}>
-        <span className="text-white">Next</span>
-      </button> */}
+
+      {/* Navigation buttons intentionally untouched */}
     </div>
   );
 };

@@ -23,216 +23,170 @@ const EmblaCarouselTwo = (props) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section id="blog" className="embla bg-neutral-900/90 rounded-lg p-20">
-      <div className="text-left mb-12 px-48">
-        <span className="inline-flex ml-40 uppercase font-bold tracking-wider text-gray-400 mb-2">
-          <IconPoint className="text-white -ml-40" stroke={1} width={20} />
+    <section
+      id="blog"
+      className="
+        embla bg-neutral-900/90 rounded-lg
+        p-6 sm:p-10 md:p-14 lg:p-20
+      "
+    >
+      {/* Header */}
+      <div className="mb-12 text-center lg:text-left px-0 lg:px-48">
+        <span className="inline-flex justify-center lg:justify-start uppercase font-bold tracking-wider text-gray-400 mb-2">
+          <IconPoint className="text-white mr-2" stroke={1} width={20} />
           Journal
         </span>
-        <h1 className="text-6xl mb-2 font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
           <span className="text-white">Blog</span> Posts
         </h1>
-        <p className="text-left text-white">
+
+        <p className="text-white text-sm sm:text-base max-w-3xl mx-auto lg:mx-0">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquam
-          rem possimus similique beatae dolores commodi quam, harum quas, velit
-          animi autem dignissimos temporibus magnam ipsum quod architecto
-          consectetur culpa.
+          rem possimus similique beatae dolores commodi quam, harum quas.
         </p>
       </div>
+
+      {/* Carousel */}
       <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
-            }}
-            className="embla__slide overflow-hidden cursor-pointer relative"
-          >
+        <div className="embla__container gap-6">
+          {/* SLIDE 1 */}
+          <motion.div className="embla__slide relative cursor-pointer">
             <Image
               src="/home/portfolio-1.jpg"
               alt="portfolio"
               width={500}
               height={300}
-              layout="responsive"
-              className="rounded-xl pb-5 hover:scale-105 transition-transform duration-300"
+              className="rounded-xl w-full h-auto pb-5 hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute top-7 right-10 p-3 uppercase font-semibold text-white rounded-full bg-gray-800/50 border-gray-700 hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300">
-              <Link href="/">
-                <h1 className="text-white transition-transform duration-700 hover:rotate-x-360">
-                  Tips & Tricks
-                </h1>
+
+            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60">
+              <Link className="hover:rotate-x-360" href="/">
+                Tips & Tricks
               </Link>
             </div>
-            <span className="inline-flex uppercase font-bold tracking-wider text-gray-300 mb-2">
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>Visual Art</h1>
-              </span>
-              <IconPoint className="text-white" stroke={1} width={20} />
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>Concept</h1>
-              </span>
+
+            <span className="inline-flex flex-wrap items-center gap-2 uppercase text-xs font-bold text-gray-300 mb-2">
+              <h1>Visual Art</h1>
+              <IconPoint stroke={1} width={16} />
+              <h1>Concept</h1>
             </span>
-            <h1 className="capitalize text-white text-3xl font-bold">
+
+            <h1 className="text-white text-xl sm:text-2xl font-bold">
               Fold Twist Abstract
             </h1>
           </motion.div>
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
-            }}
-            className="embla__slide overflow-hidden cursor-pointer relative"
-          >
+
+          {/* SLIDE 2 */}
+          <motion.div className="embla__slide relative cursor-pointer">
             <Image
               src="/home/portfolio-2.jpg"
               alt="portfolio-two"
               width={500}
               height={300}
-              layout="responsive"
-              className="rounded-xl pb-5 hover:scale-105 transition-transform duration-300"
+              className="rounded-xl w-full h-auto pb-5 hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute top-7 right-10 p-3 uppercase font-semibold text-white rounded-full bg-gray-800/50 border-gray-700 hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300">
-              <Link href="/">
-                <h1 className="text-white transition-transform duration-700 hover:rotate-x-360">
-                  Tips & Tricks
-                </h1>
-              </Link>
+
+            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60">
+              <Link href="/">Tips & Tricks</Link>
             </div>
-            <span className="inline-flex uppercase font-bold tracking-wider text-gray-300 mb-2">
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>3D Modeling</h1>
-              </span>
-              <IconPoint className="text-white" stroke={1} width={20} />
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>Visual Art</h1>
-              </span>
-              <IconPoint className="text-white" stroke={1} width={20} />
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>Concept</h1>
-              </span>
+
+            <span className="inline-flex flex-wrap items-center gap-2 uppercase text-xs font-bold text-gray-300 mb-2">
+              <h1>3D Modeling</h1>
+              <IconPoint stroke={1} width={16} />
+              <h1>Visual Art</h1>
+              <IconPoint stroke={1} width={16} />
+              <h1>Concept</h1>
             </span>
-            <h1 className="text-white text-3xl font-bold">Colors of Circle</h1>
+
+            <h1 className="text-white text-xl sm:text-2xl font-bold">
+              Colors of Circle
+            </h1>
           </motion.div>
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
-            }}
-            className="embla__slide overflow-hidden cursor-pointer relative"
-          >
+
+          {/* SLIDE 3 */}
+          <motion.div className="embla__slide relative cursor-pointer">
             <Image
               src="/home/portfolio-1.jpg"
               alt="portfolio"
               width={500}
               height={300}
-              layout="responsive"
-              className="rounded-xl pb-5 hover:scale-105 transition-transform duration-300"
+              className="rounded-xl w-full h-auto pb-5 hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute top-7 right-10 p-3 uppercase font-semibold text-white rounded-full bg-gray-800/50 border-gray-700 hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300">
-              <Link href="/">
-                <h1 className="text-white transition-transform duration-700 hover:rotate-x-360">
-                  Tips & Tricks
-                </h1>
-              </Link>
+            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60">
+              <Link href="/">Tips & Tricks</Link>
             </div>
-            <span className="inline-flex uppercase font-bold tracking-wider text-gray-300 mb-2">
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>Visual Art</h1>
-              </span>
-              <IconPoint className="text-white" stroke={1} width={20} />
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>Concept</h1>
-              </span>
+
+            <span className="inline-flex flex-wrap items-center gap-2 uppercase text-xs font-bold text-gray-300 mb-2">
+              <h1>3D Modeling</h1>
+              <IconPoint stroke={1} width={16} />
+              <h1>Visual Art</h1>
+              <IconPoint stroke={1} width={16} />
+              <h1>Concept</h1>
             </span>
-            <h1 className="capitalize text-white text-3xl font-bold">
-              Fold Twist Abstract
+
+            <h1 className="text-white text-xl sm:text-2xl font-bold">
+              Colors of Circle
             </h1>
           </motion.div>
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
-            }}
-            className="embla__slide overflow-hidden cursor-pointer relative"
-          >
+
+          {/* SLIDE 4 */}
+          <motion.div className="embla__slide relative cursor-pointer">
             <Image
               src="/home/portfolio-2.jpg"
               alt="portfolio-two"
               width={500}
               height={300}
-              layout="responsive"
-              className="rounded-xl pb-5 hover:scale-105 transition-transform duration-300"
+              className="rounded-xl w-full h-auto pb-5 hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute top-7 right-10 p-3 uppercase font-semibold text-white rounded-full bg-gray-800/50 border-gray-700 hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300">
-              <Link href="/">
-                <h1 className="text-white transition-transform duration-700 hover:rotate-x-360">
-                  Tips & Tricks
-                </h1>
-              </Link>
+            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60">
+              <Link href="/">Tips & Tricks</Link>
             </div>
-            <span className="inline-flex uppercase font-bold tracking-wider text-gray-300 mb-2">
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>Visual Art</h1>
-              </span>
-              <IconPoint className="text-white" stroke={1} width={20} />
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>Concept</h1>
-              </span>
+
+            <span className="inline-flex flex-wrap items-center gap-2 uppercase text-xs font-bold text-gray-300 mb-2">
+              <h1>3D Modeling</h1>
+              <IconPoint stroke={1} width={16} />
+              <h1>Visual Art</h1>
+              <IconPoint stroke={1} width={16} />
+              <h1>Concept</h1>
             </span>
-            <h1 className="capitalize text-white text-3xl font-bold">
-              Fold Twist Abstract
+
+            <h1 className="text-white text-xl sm:text-2xl font-bold">
+              Colors of Circle
             </h1>
           </motion.div>
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
-            }}
-            className="embla__slide overflow-hidden cursor-pointer relative"
-          >
+
+          {/* SLIDE 5 */}
+          <motion.div className="embla__slide relative cursor-pointer">
             <Image
               src="/home/portfolio-1.jpg"
               alt="portfolio"
               width={500}
               height={300}
-              layout="responsive"
-              className="rounded-xl pb-5 hover:scale-105 transition-transform duration-300"
+              className="rounded-xl w-full h-auto pb-5 hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute top-7 right-10 p-3 uppercase font-semibold text-white rounded-full bg-gray-800/50 border-gray-700 hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300">
-              <Link href="/">
-                <h1 className="text-white transition-transform duration-700 hover:rotate-x-360">
-                  Tips & Tricks
-                </h1>
-              </Link>
+            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60">
+              <Link href="/">Tips & Tricks</Link>
             </div>
-            <span className="inline-flex uppercase font-bold tracking-wider text-gray-300 mb-2">
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>Visual Art</h1>
-              </span>
-              <IconPoint className="text-white" stroke={1} width={20} />
-              <span className="transition-transform duration-700 hover:rotate-x-360">
-                <h1>Concept</h1>
-              </span>
+
+            <span className="inline-flex flex-wrap items-center gap-2 uppercase text-xs font-bold text-gray-300 mb-2">
+              <h1>3D Modeling</h1>
+              <IconPoint stroke={1} width={16} />
+              <h1>Visual Art</h1>
+              <IconPoint stroke={1} width={16} />
+              <h1>Concept</h1>
             </span>
-            <h1 className="capitalize text-white text-3xl font-bold">
-              Visual Art of Cubes
+
+            <h1 className="text-white text-xl sm:text-2xl font-bold">
+              Colors of Circle
             </h1>
           </motion.div>
         </div>
       </div>
 
-      <div className="embla__controls">
-        <div className="embla__buttons">
+      {/* Controls */}
+      <div className="embla__controls mt-8 flex justify-center lg:justify-end">
+        <div className="embla__buttons flex gap-4">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
