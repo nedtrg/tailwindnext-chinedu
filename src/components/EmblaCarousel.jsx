@@ -226,24 +226,28 @@ const EmblaCarousel = (props) => {
               cursor-pointer
             "
           >
-            <Image
-              src="/home/portfolio-2.jpg"
-              alt="portfolio-two"
-              width={500}
-              height={300}
-              layout="responsive"
-              className="rounded-xl pb-4 hover:scale-105 transition-transform duration-300"
-            />
+            <Link href="https://hta-final-project.vercel.app/" target="_blank">
+              <Image
+                src="/home/hta-ss.png"
+                alt="portfolio-two"
+                width={500}
+                height={300}
+                layout="responsive"
+                className="rounded-xl pb-4 hover:scale-105 transition-transform duration-300"
+              />
+            </Link>
 
             <span className="inline-flex flex-wrap items-center gap-2 uppercase font-bold tracking-wider text-gray-300 mb-2 text-xs sm:text-sm">
-              <h1>Visual Art</h1>
+              <h1>School Portal Website </h1>
               <IconPoint className="text-white" stroke={1} width={16} />
-              <h1>Concept</h1>
+              <h1>Academics</h1>
             </span>
 
-            <h1 className="capitalize text-white font-bold text-xl sm:text-2xl md:text-3xl">
-              Fold Twist Abstract
-            </h1>
+            <Link href="https://hta-final-project.vercel.app/" target="_blank">
+              <h1 className="capitalize text-white font-bold text-xl sm:text-2xl md:text-3xl hover:rotate-x-360 transition duration-300">
+                Honey Treat Academy
+              </h1>
+            </Link>
           </motion.div>
 
           {/* Slide 5 */}
@@ -267,24 +271,33 @@ const EmblaCarousel = (props) => {
               cursor-pointer
             "
           >
-            <Image
-              src="/home/portfolio-1.jpg"
-              alt="portfolio"
-              width={500}
-              height={300}
-              layout="responsive"
-              className="rounded-xl pb-4 hover:scale-105 transition-transform duration-300"
-            />
+            <Link
+              href="https://project-x-chinedu-porfolio.vercel.app/"
+              target="_blank"
+            >
+              <Image
+                src="/home/projectx-ss.png"
+                alt="portfolio"
+                width={500}
+                height={300}
+                layout="responsive"
+                className="rounded-xl pb-4 hover:scale-105 transition-transform duration-300"
+              />
+            </Link>
 
             <span className="inline-flex flex-wrap items-center gap-2 uppercase font-bold tracking-wider text-gray-300 mb-2 text-xs sm:text-sm">
-              <h1>Visual Art</h1>
+              <h1>Portfolio Website featuring Light/Dark Mode</h1>
               <IconPoint className="text-white" stroke={1} width={16} />
-              <h1>Concept</h1>
+              <h1>Portfolio</h1>
             </span>
-
-            <h1 className="capitalize text-white font-bold text-xl sm:text-2xl md:text-3xl">
-              Visual Art of Cubes
-            </h1>
+            <Link
+              href="https://project-x-chinedu-porfolio.vercel.app/"
+              target="_blank"
+            >
+              <h1 className="capitalize text-white font-bold text-xl sm:text-2xl md:text-3xl hover:rotate-x-360 transition duration-300">
+                Project X Portfolio
+              </h1>
+            </Link>
           </motion.div>
         </div>
       </div>
