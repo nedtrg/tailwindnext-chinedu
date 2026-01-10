@@ -144,10 +144,17 @@ html {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .embla__slide {
     min-width: 100%;
     height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .embla__slide {
+    min-width: 45%;
+    height: 450px;
   }
 }
 
