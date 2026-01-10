@@ -1,5 +1,6 @@
 import { Outfit, Open_Sans } from "next/font/google";
 import "./globals.css";
+import AOSProvider from "@/components/AOSProvider";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${outfit.variable} ${openSans.variable} antialiased`}>
-        {children}
+        <AOSProvider>{children}</AOSProvider>
       </body>
     </html>
   );

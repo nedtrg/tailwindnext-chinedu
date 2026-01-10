@@ -11,11 +11,16 @@ export default function PersonalMessage() {
         items-center
         gap-8 sm:gap-12 lg:gap-40
         px-4 sm:px-8 md:px-16 lg:px-28
-        mb-10
+        mb-10 
       "
     >
       {/* Image */}
-      <div className="flex-shrink-0">
+      <div
+        data-aos="fade-right"
+        data-aos-delay="400"
+        data-aos-duration="800"
+        className="flex-shrink-0"
+      >
         <Image
           src={marbella}
           width={450}
@@ -33,7 +38,12 @@ export default function PersonalMessage() {
       </div>
 
       {/* Text Content */}
-      <div className="service-boxthree text-center lg:text-left max-w-2xl">
+      <div
+        data-aos="fade-left"
+        data-aos-delay="400"
+        data-aos-duration="1400"
+        className="service-boxthree text-center lg:text-left max-w-2xl"
+      >
         <h1 className="text-white text-xl sm:text-2xl font-bold capitalize pb-2">
           Marcella Leonard
         </h1>

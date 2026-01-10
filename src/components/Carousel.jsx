@@ -17,12 +17,26 @@ const Carousel = ({ slides }) => {
   }, [emblaApi]);
 
   return (
-    <div className={`${styles.embla} pb-12 sm:pb-16 lg:pb-20 px-4`}>
-      <div className={styles.embla__viewport} ref={emblaRef}>
+    <div
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-easing="ease-out-cubic"
+      className={`${styles.embla} pb-12 sm:pb-16 lg:pb-20 px-4`}
+    >
+      <div
+        data-aos="fade-up"
+        data-aos-delay="150"
+        className={styles.embla__viewport}
+        ref={emblaRef}
+      >
         <div className={styles.embla__container}>
           {slides.map((slide, index) => (
             <div
               key={index}
+              data-aos="fade-up"
+              data-aos-delay={300 + index * 120}
+              data-aos-duration="1600"
+              data-aos-easing="ease-out-cubic"
               className={`
                 ${styles.embla__slide}
                 flex

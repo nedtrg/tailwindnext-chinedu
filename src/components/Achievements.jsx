@@ -5,15 +5,17 @@ export default function Achievements() {
     <div
       id="awards"
       className="
-        text-white min-h-screen
+        text-white min-h-full
         flex flex-col lg:flex-row
         items-start
         px-4 sm:px-6 md:px-10 lg:px-10
-        py-10 lg:gap-20
+        py-10 lg:gap-20 lg:mb-10
       "
     >
       {/* Header Section */}
       <div
+        data-aos="fade-right"
+        data-aos-delay="100"
         className="
           w-full lg:basis-1/4
           flex flex-col items-center lg:items-start
@@ -49,6 +51,11 @@ export default function Achievements() {
       >
         {/* Card 1 */}
         <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="900"
+          data-aos-easing="ease-out-cubic"
+          data-aos-anchor-placement="top-bottom"
           className="service-boxtwo bg-gray-800 rounded-lg border border-gray-700 p-6
                         hover:border-purple-900/5
                         hover:bg-gradient-to-r hover:from-purple-800/5 hover:via-purple-700/5 hover:to-purple-500/5
@@ -65,6 +72,10 @@ export default function Achievements() {
 
         {/* Card 2 */}
         <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-duration="900"
+          data-aos-easing="ease-out-cubic"
           className="service-boxtwo bg-gray-800 rounded-lg border border-gray-700 p-6
                         hover:border-purple-900/5
                         hover:bg-gradient-to-r hover:from-purple-800/5 hover:via-purple-700/5 hover:to-purple-500/5
@@ -81,6 +92,10 @@ export default function Achievements() {
 
         {/* Card 3 */}
         <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="900"
+          data-aos-easing="ease-out-cubic"
           className="service-boxtwo bg-gray-800 rounded-lg border border-gray-700 p-6
                         sm:mt-0 lg:mt-8
                         hover:border-purple-900/5
@@ -98,6 +113,10 @@ export default function Achievements() {
 
         {/* Card 4 */}
         <div
+          data-aos="fade-up"
+          data-aos-delay="450"
+          data-aos-duration="900"
+          data-aos-easing="ease-out-cubic"
           className="service-boxtwo bg-gray-800 rounded-lg border border-gray-700 p-6
                         sm:mt-0 lg:mt-8
                         hover:border-purple-900/5

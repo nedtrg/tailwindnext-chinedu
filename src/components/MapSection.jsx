@@ -2,7 +2,12 @@ import React from "react";
 
 export default function MapSection() {
   return (
-    <section className="w-full bg-black px-4 sm:px-10 lg:px-24 py-16">
+    <section
+      data-aos="fade-up"
+      data-aos-delay="400"
+      data-aos-duration="1400"
+      className="w-full bg-black px-4 sm:px-10 lg:px-24 py-16"
+    >
       <div className="relative w-full h-[320px] sm:h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
         <iframe
           title="Google Map"

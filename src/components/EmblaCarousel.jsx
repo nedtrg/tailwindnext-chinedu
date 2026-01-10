@@ -25,11 +25,16 @@ const EmblaCarousel = (props) => {
   return (
     <section
       id="portfolio"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-easing="ease-out-cubic"
       className="embla bg-neutral-900/90 rounded-lg
                  p-6 sm:p-10 md:p-16 lg:p-20"
     >
       {/* Header */}
       <div
+        data-aos="fade-up"
+        data-aos-delay="150"
         className="text-center mb-8 sm:mb-10 md:mb-12
                    px-4 sm:px-10 md:px-24 lg:text-left lg:px-48"
       >
@@ -56,10 +61,18 @@ const EmblaCarousel = (props) => {
       </div>
 
       {/* Carousel */}
-      <div className="embla__viewport" ref={emblaRef}>
+      <div
+        data-aos="fade-up"
+        data-aos-delay="300"
+        className="embla__viewport"
+        ref={emblaRef}
+      >
         <div className="embla__container flex gap-4 sm:gap-6 md:gap-8">
           {/* Slide 1 */}
           <motion.div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="800"
             initial="hidden"
             animate="visible"
             variants={{
@@ -105,6 +118,9 @@ const EmblaCarousel = (props) => {
 
           {/* Slide 2 */}
           <motion.div
+            data-aos="fade-up"
+            data-aos-delay="550"
+            data-aos-duration="800"
             initial="hidden"
             animate="visible"
             variants={{
@@ -156,6 +172,9 @@ const EmblaCarousel = (props) => {
 
           {/* Slide 3 */}
           <motion.div
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-duration="800"
             initial="hidden"
             animate="visible"
             variants={{
@@ -207,6 +226,9 @@ const EmblaCarousel = (props) => {
 
           {/* Slide 4 */}
           <motion.div
+            data-aos="fade-up"
+            data-aos-delay="850"
+            data-aos-duration="800"
             initial="hidden"
             animate="visible"
             variants={{
@@ -252,6 +274,9 @@ const EmblaCarousel = (props) => {
 
           {/* Slide 5 */}
           <motion.div
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-aos-duration="800"
             initial="hidden"
             animate="visible"
             variants={{
@@ -303,7 +328,11 @@ const EmblaCarousel = (props) => {
       </div>
 
       {/* Controls */}
-      <div className="embla__controls mt-6 flex justify-center">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="1150"
+        className="embla__controls mt-6 flex justify-center"
+      >
         <div className="embla__buttons flex gap-4">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />

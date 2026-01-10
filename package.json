@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "@tabler/icons-react": "^3.28.1",
+    "aos": "^2.3.4",
     "embla-carousel": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
     "framer-motion": "^12.6.0",
     "motion": "^12.5.0",
-    "next": "15.2.8",
+    "next": "^15.5.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-slick": "^0.30.3",

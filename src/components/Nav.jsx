@@ -30,13 +30,19 @@ export default function Nav() {
     >
       {/* LOGO */}
       <div>
-        <h1 className="text-2xl lg:text-3xl font-light text-white">NedTRG</h1>
+        <h1
+          className="text-2xl lg:text-3xl font-light text-white"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
+          NedTRG
+        </h1>
       </div>
 
       {/* ACTION BUTTONS */}
       <div>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-          <div>
+          <div data-aos="fade-down" data-aos-delay="400">
             <Link href="#contact">
               <button className="px-4 py-2 text-white rounded-full bg-gray-800/50 border border-gray-700 hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300">
                 <span className="inline-flex items-center gap-1 uppercase font-semibold text-sm hover:rotate-x-360 transition duration-300">
@@ -47,7 +53,7 @@ export default function Nav() {
             </Link>
           </div>
 
-          <div>
+          <div data-aos="fade-down" data-aos-delay="600">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="bg-white px-4 py-2 border border-white rounded-full transition duration-300"

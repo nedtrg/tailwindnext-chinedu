@@ -16,6 +16,9 @@ export default function Logo() {
           leading-tight
           break-words
         "
+        data-aos="zoom-in"
+        data-aos-delay="600"
+        data-aos-duration="1400"
       >
         Chinedu Adigwu
       </h1>

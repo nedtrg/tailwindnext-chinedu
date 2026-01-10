@@ -25,13 +25,20 @@ const EmblaCarouselTwo = (props) => {
   return (
     <section
       id="blog"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-easing="ease-out-cubic"
       className="
         embla bg-neutral-900/90 rounded-lg
         p-6 sm:p-10 md:p-14 lg:p-20
       "
     >
       {/* Header */}
-      <div className="mb-12 text-center lg:text-left px-0 lg:px-48">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="150"
+        className="mb-12 text-center lg:text-left px-0 lg:px-48"
+      >
         <span className="inline-flex justify-center lg:justify-start uppercase font-bold tracking-wider text-gray-400 mb-2">
           <IconPoint className="text-white mr-2" stroke={1} width={20} />
           Journal
@@ -48,10 +55,20 @@ const EmblaCarouselTwo = (props) => {
       </div>
 
       {/* Carousel */}
-      <div className="embla__viewport" ref={emblaRef}>
+      <div
+        data-aos="fade-up"
+        data-aos-delay="300"
+        className="embla__viewport"
+        ref={emblaRef}
+      >
         <div className="embla__container gap-6">
           {/* SLIDE 1 */}
-          <motion.div className="embla__slide relative cursor-pointer">
+          <motion.div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="800"
+            className="embla__slide relative cursor-pointer"
+          >
             <Image
               src="/home/portfolio-1.jpg"
               alt="portfolio"
@@ -78,7 +95,12 @@ const EmblaCarouselTwo = (props) => {
           </motion.div>
 
           {/* SLIDE 2 */}
-          <motion.div className="embla__slide relative cursor-pointer">
+          <motion.div
+            data-aos="fade-up"
+            data-aos-delay="550"
+            data-aos-duration="800"
+            className="embla__slide relative cursor-pointer"
+          >
             <Image
               src="/home/portfolio-2.jpg"
               alt="portfolio-two"
@@ -105,7 +127,12 @@ const EmblaCarouselTwo = (props) => {
           </motion.div>
 
           {/* SLIDE 3 */}
-          <motion.div className="embla__slide relative cursor-pointer">
+          <motion.div
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-duration="800"
+            className="embla__slide relative cursor-pointer"
+          >
             <Image
               src="/home/portfolio-1.jpg"
               alt="portfolio"
@@ -131,7 +158,12 @@ const EmblaCarouselTwo = (props) => {
           </motion.div>
 
           {/* SLIDE 4 */}
-          <motion.div className="embla__slide relative cursor-pointer">
+          <motion.div
+            data-aos="fade-up"
+            data-aos-delay="850"
+            data-aos-duration="800"
+            className="embla__slide relative cursor-pointer"
+          >
             <Image
               src="/home/portfolio-2.jpg"
               alt="portfolio-two"
@@ -157,7 +189,12 @@ const EmblaCarouselTwo = (props) => {
           </motion.div>
 
           {/* SLIDE 5 */}
-          <motion.div className="embla__slide relative cursor-pointer">
+          <motion.div
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-aos-duration="800"
+            className="embla__slide relative cursor-pointer"
+          >
             <Image
               src="/home/portfolio-1.jpg"
               alt="portfolio"
@@ -185,7 +222,11 @@ const EmblaCarouselTwo = (props) => {
       </div>
 
       {/* Controls */}
-      <div className="embla__controls mt-8 flex justify-center lg:justify-end">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="1150"
+        className="embla__controls mt-8 flex justify-center lg:justify-end"
+      >
         <div className="embla__buttons flex gap-4">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />

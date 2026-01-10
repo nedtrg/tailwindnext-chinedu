@@ -22,7 +22,11 @@ export default function Services() {
       "
     >
       {/* LEFT TITLE */}
-      <div className="w-full lg:basis-1/3 text-center lg:text-left">
+      <div
+        className="w-full lg:basis-1/3 text-center lg:text-left"
+        data-aos="fade-right"
+        data-aos-delay="100"
+      >
         <span className="inline-flex items-center uppercase font-bold tracking-wider text-gray-400 mb-4">
           <IconPoint className="text-white mr-2" stroke={1} width={18} />
           Services
@@ -36,7 +40,14 @@ export default function Services() {
       {/* RIGHT SERVICES LIST */}
       <div className="w-full lg:basis-2/3 max-w-5xl">
         {/* SERVICE 01 */}
-        <div className="service-boxtwo mb-8 bg-gray-800 rounded-lg border border-gray-700 hover:border-purple-900/5 hover:bg-gradient-to-r hover:from-purple-800/5 hover:via-purple-700/5 hover:to-purple-500/5 transition duration-300 p-6">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="900"
+          data-aos-easing="ease-out-cubic"
+          data-aos-anchor-placement="top-bottom"
+          className="service-boxtwo mb-8 bg-gray-800 rounded-lg border border-gray-700 hover:border-purple-900/5 hover:bg-gradient-to-r hover:from-purple-800/5 hover:via-purple-700/5 hover:to-purple-500/5 transition duration-300 p-6"
+        >
           <div className="text-gray-200 text-2xl sm:text-3xl font-bold mb-4">
             01/
           </div>
@@ -54,7 +65,13 @@ export default function Services() {
         </div>
 
         {/* SERVICE 02 */}
-        <div className="service-boxtwo mb-8 bg-gray-800 rounded-lg border border-gray-700 hover:border-purple-900/5 hover:bg-gradient-to-r hover:from-purple-800/5 hover:via-purple-700/5 hover:to-purple-500/5 transition duration-300 p-6">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-duration="900"
+          data-aos-easing="ease-out-cubic"
+          className="service-boxtwo mb-8 bg-gray-800 rounded-lg border border-gray-700 hover:border-purple-900/5 hover:bg-gradient-to-r hover:from-purple-800/5 hover:via-purple-700/5 hover:to-purple-500/5 transition duration-300 p-6"
+        >
           <div className="text-gray-200 text-2xl sm:text-3xl font-bold mb-4">
             02/
           </div>
@@ -72,7 +89,13 @@ export default function Services() {
         </div>
 
         {/* SERVICE 03 */}
-        <div className="service-boxtwo bg-gray-800 rounded-lg border border-gray-700 hover:border-purple-900/5 hover:bg-gradient-to-r hover:from-purple-800/5 hover:via-purple-700/5 hover:to-purple-500/5 transition duration-300 p-6">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="900"
+          data-aos-easing="ease-out-cubic"
+          className="service-boxtwo bg-gray-800 rounded-lg border border-gray-700 hover:border-purple-900/5 hover:bg-gradient-to-r hover:from-purple-800/5 hover:via-purple-700/5 hover:to-purple-500/5 transition duration-300 p-6"
+        >
           <div className="text-gray-200 text-2xl sm:text-3xl font-bold mb-4">
             03/
           </div>
