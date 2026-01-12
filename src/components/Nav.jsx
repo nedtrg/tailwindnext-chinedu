@@ -25,7 +25,7 @@ export default function Nav() {
     };
   }, [containerRef]);
 
-  // Handle sticky behavior (NEW — focused change)
+  // Handle sticky behavior (UNCHANGED)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 80) {
@@ -107,7 +107,7 @@ export default function Nav() {
               sm:left-auto
               sm:right-7
               w-auto
-              sm:w-48
+              sm:w-24
               p-3
               bg-gray-900
               border
@@ -128,7 +128,8 @@ export default function Nav() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="border border-blue-300/10 rounded-lg hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300"
+                  onClick={() => setMenuOpen(false)} // ✅ CLOSE MENU ON CLICK
+                  className="cursor-pointer border border-blue-300/10 rounded-lg hover:border-purple-900/10 hover:bg-gradient-to-r hover:from-purple-800/10 hover:via-purple-700/10 hover:to-purple-500/10 transition duration-300"
                 >
                   <Link href={`#${item}`}>
                     <h1 className="block px-4 py-3 capitalize text-center font-semibold text-white">
