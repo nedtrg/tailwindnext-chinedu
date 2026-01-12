@@ -49,8 +49,10 @@ const EmblaCarouselTwo = (props) => {
         </h1>
 
         <p className="text-white text-sm sm:text-base max-w-3xl mx-auto lg:mx-0">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquam
-          rem possimus similique beatae dolores commodi quam, harum quas.
+          A curated collection of articles sharing insights, tutorials, and
+          experiences in web development, technology trends, and
+          problem-solving, showcasing my learning journey and passion for
+          building impactful digital solutions.
         </p>
       </div>
 
