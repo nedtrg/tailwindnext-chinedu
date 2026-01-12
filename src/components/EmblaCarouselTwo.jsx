@@ -77,7 +77,7 @@ const EmblaCarouselTwo = (props) => {
               className="rounded-xl w-full h-auto pb-5 hover:scale-105 transition-transform duration-300"
             />
 
-            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60">
+            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60 hover:rotate-x-360 transition duration-300">
               <Link className="hover:rotate-x-360" href="/">
                 Tips & Tricks
               </Link>
@@ -89,7 +89,7 @@ const EmblaCarouselTwo = (props) => {
               <h1>Concept</h1>
             </span>
 
-            <h1 className="text-white text-xl sm:text-2xl font-bold">
+            <h1 className="text-white text-xl sm:text-2xl font-bold hover:rotate-x-360 transition duration-300">
               Fold Twist Abstract
             </h1>
           </motion.div>
@@ -109,7 +109,7 @@ const EmblaCarouselTwo = (props) => {
               className="rounded-xl w-full h-auto pb-5 hover:scale-105 transition-transform duration-300"
             />
 
-            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60">
+            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60 hover:rotate-x-360 transition duration-300">
               <Link href="/">Tips & Tricks</Link>
             </div>
 
@@ -121,7 +121,7 @@ const EmblaCarouselTwo = (props) => {
               <h1>Concept</h1>
             </span>
 
-            <h1 className="text-white text-xl sm:text-2xl font-bold">
+            <h1 className="text-white text-xl sm:text-2xl font-bold hover:rotate-x-360 transition duration-300">
               Colors of Circle
             </h1>
           </motion.div>
@@ -140,7 +140,7 @@ const EmblaCarouselTwo = (props) => {
               height={300}
               className="rounded-xl w-full h-auto pb-5 hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60">
+            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60 hover:rotate-x-360 transition duration-300">
               <Link href="/">Tips & Tricks</Link>
             </div>
 
@@ -152,7 +152,7 @@ const EmblaCarouselTwo = (props) => {
               <h1>Concept</h1>
             </span>
 
-            <h1 className="text-white text-xl sm:text-2xl font-bold">
+            <h1 className="text-white text-xl sm:text-2xl font-bold hover:rotate-x-360 transition duration-300">
               Colors of Circle
             </h1>
           </motion.div>
@@ -171,7 +171,7 @@ const EmblaCarouselTwo = (props) => {
               height={300}
               className="rounded-xl w-full h-auto pb-5 hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60">
+            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60 hover:rotate-x-360 transition duration-300">
               <Link href="/">Tips & Tricks</Link>
             </div>
 
@@ -183,7 +183,7 @@ const EmblaCarouselTwo = (props) => {
               <h1>Concept</h1>
             </span>
 
-            <h1 className="text-white text-xl sm:text-2xl font-bold">
+            <h1 className="text-white text-xl sm:text-2xl font-bold hover:rotate-x-360 transition duration-300">
               Colors of Circle
             </h1>
           </motion.div>
@@ -202,7 +202,7 @@ const EmblaCarouselTwo = (props) => {
               height={300}
               className="rounded-xl w-full h-auto pb-5 hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60">
+            <div className="absolute top-7 right-7 p-2 text-xs sm:text-sm uppercase font-semibold text-white rounded-full bg-gray-800/60 hover:rotate-x-360 transition duration-300">
               <Link href="/">Tips & Tricks</Link>
             </div>
 
@@ -214,7 +214,7 @@ const EmblaCarouselTwo = (props) => {
               <h1>Concept</h1>
             </span>
 
-            <h1 className="text-white text-xl sm:text-2xl font-bold">
+            <h1 className="text-white text-xl sm:text-2xl font-bold hover:rotate-x-360 transition duration-300">
               Colors of Circle
             </h1>
           </motion.div>

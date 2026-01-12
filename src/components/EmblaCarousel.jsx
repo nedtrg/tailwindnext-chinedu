@@ -53,10 +53,9 @@ const EmblaCarousel = (props) => {
         </h1>
 
         <p className="text-white text-sm sm:text-base max-w-3xl mx-auto lg:mx-0">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquam
-          rem possimus similique beatae dolores commodi quam, harum quas, velit
-          animi autem dignissimos temporibus magnam ipsum quod architecto
-          consectetur culpa.
+          A selection of projects showcasing my experience in full-stack web
+          development, responsive UI design, API integration, and scalable
+          solutions built for real-world users and business needs.
         </p>
       </div>
 

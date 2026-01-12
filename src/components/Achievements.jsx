@@ -62,11 +62,13 @@ export default function Achievements() {
                         transition duration-300"
         >
           <h1 className="text-gray-200 text-xl sm:text-2xl font-extrabold pb-3">
-            Best Designer of the Month
+            Software Development Certification (USADF/LSETF)
           </h1>
-          <h2 className="text-sm font-bold pb-3 text-gray-500">2023</h2>
+          <h2 className="text-sm font-bold pb-3 text-gray-500">2024</h2>
           <p className="text-gray-300 text-sm sm:text-base">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Completed hands-on training covering modern web technologies,
+            responsive UI development, JavaScript frameworks, and practical
+            project-based learning.
           </p>
         </div>
 
@@ -82,11 +84,13 @@ export default function Achievements() {
                         transition duration-300"
         >
           <h1 className="text-gray-200 text-xl sm:text-2xl font-extrabold pb-3">
-            The True Gem
+            Certified Backend Developer, Nigerian-German Centre (GIZ)
           </h1>
-          <h2 className="text-sm font-bold pb-3 text-gray-500">2023</h2>
+          <h2 className="text-sm font-bold pb-3 text-gray-500">2025</h2>
           <p className="text-gray-300 text-sm sm:text-base">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Developed and maintained robust backend services, RESTful APIs, and
+            databases, focusing on performance, security, scalability, and
+            integration of real-world application requirements.
           </p>
         </div>
 
@@ -103,11 +107,13 @@ export default function Achievements() {
                         transition duration-300"
         >
           <h1 className="text-gray-200 text-xl sm:text-2xl font-extrabold pb-3">
-            First Class Performer
+            Certiﬁcate of Participation, Power Learn Project Africa (PLP)
           </h1>
-          <h2 className="text-sm font-bold pb-3 text-gray-500">2022</h2>
+          <h2 className="text-sm font-bold pb-3 text-gray-500">2024</h2>
           <p className="text-gray-300 text-sm sm:text-base">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Applied database management best practices while developing Flutter
+            web applications with Dart, integrating Firebase for authentication,
+            data storage, and real-time client-side functionality.
           </p>
         </div>
 
@@ -124,11 +130,13 @@ export default function Achievements() {
                         transition duration-300"
         >
           <h1 className="text-gray-200 text-xl sm:text-2xl font-extrabold pb-3">
-            Customer&apos;s Favorite
+            Certiﬁed, National Youth Service Corps (NYSC)
           </h1>
-          <h2 className="text-sm font-bold pb-3 text-gray-500">2021</h2>
+          <h2 className="text-sm font-bold pb-3 text-gray-500">2019</h2>
           <p className="text-gray-300 text-sm sm:text-base">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Completed national service, contributing to community development,
+            organizational support, and professional growth through teamwork,
+            leadership, and public service initiatives.
           </p>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import marbella from "../../public/home/testimonial-1.jpg";
+import pmned from "../../public/home/pm-ned.jpg";
 import { IconQuote } from "@tabler/icons-react";
 
 export default function PersonalMessage() {
@@ -22,7 +23,7 @@ export default function PersonalMessage() {
         className="flex-shrink-0"
       >
         <Image
-          src={marbella}
+          src={pmned}
           width={450}
           height={450}
           alt="client picture"
@@ -45,17 +46,18 @@ export default function PersonalMessage() {
         className="service-boxthree text-center lg:text-left max-w-2xl"
       >
         <h1 className="text-white text-xl sm:text-2xl font-bold capitalize pb-2">
-          Marcella Leonard
+          Adigwu Chinedum Hilary
         </h1>
 
         <h1 className="text-white uppercase pb-4 font-semibold text-sm sm:text-base">
-          Creative Director
+          Full-Stack Developer | Backend • Frontend • Flutter
         </h1>
 
         <div className="relative flex justify-center lg:justify-start">
           <h1 className="text-gray-400 italic text-base sm:text-lg md:text-xl lg:text-2xl pb-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-            inventore dolore qui. Aliquam, odio pariatur.
+            Full-stack software developer specializing in scalable backend APIs,
+            database management, modern frontend interfaces, and Flutter web
+            applications with secure, real-time Firebase integration.
           </h1>
 
           {/* Quote Icon */}

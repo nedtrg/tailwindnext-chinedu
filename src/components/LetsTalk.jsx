@@ -38,7 +38,7 @@ export default function LetsTalk() {
                 Email:
               </h1>
               <h1 className="text-xl sm:text-2xl font-bold">
-                contact@flattheme.net
+                neddieadigwu94@gmail.com
               </h1>
             </div>
 
@@ -46,7 +46,9 @@ export default function LetsTalk() {
               <h1 className="font-bold uppercase tracking-widest text-gray-400 mb-2">
                 Call:
               </h1>
-              <h1 className="text-xl sm:text-2xl font-bold">+123 456 7890</h1>
+              <h1 className="text-xl sm:text-2xl font-bold">
+                +234 810 595 8002
+              </h1>
             </div>
           </div>
 

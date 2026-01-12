@@ -10,6 +10,7 @@ import EmblaCarouselTwo from "@/components/EmblaCarouselTwo";
 import LetsTalk from "@/components/LetsTalk";
 import MapSection from "@/components/MapSection";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   const slides = [
@@ -38,6 +39,7 @@ export default function Home() {
       <LetsTalk />
       <MapSection />
       <Footer />
+      <BackToTop />
     </>
   );
 }

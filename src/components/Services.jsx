@@ -58,9 +58,9 @@ export default function Services() {
           </div>
 
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit ut,
-            dignissimos tempore nemo sunt magnam delectus perspiciatis? Maxime,
-            accusamus incidunt?
+            I design clean, intuitive user interfaces with a strong focus on
+            usability, accessibility, and visual consistency across web
+            applications and digital products.
           </p>
         </div>
 
@@ -82,9 +82,10 @@ export default function Services() {
           </div>
 
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit ut,
-            dignissimos tempore nemo sunt magnam delectus perspiciatis? Maxime,
-            accusamus incidunt?
+            I build responsive, scalable web applications using modern front-end
+            technologies while integrating robust back-end systems, APIs,
+            databases, and authentication to deliver complete, production-ready
+            solutions.
           </p>
         </div>
 
@@ -106,9 +107,9 @@ export default function Services() {
           </div>
 
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit ut,
-            dignissimos tempore nemo sunt magnam delectus perspiciatis? Maxime,
-            accusamus incidunt?
+            I apply data-driven digital marketing strategies to improve
+            visibility, engagement, and brand growth across web platforms and
+            online campaigns.
           </p>
         </div>
       </div>

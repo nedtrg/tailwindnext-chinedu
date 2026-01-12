@@ -6,8 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
   const containerRef = useRef(null);
 
+  // Handle outside click (UNCHANGED)
   useEffect(() => {
     function handleClickOutside(event) {
       if (
@@ -23,10 +25,32 @@ export default function Nav() {
     };
   }, [containerRef]);
 
+  // Handle sticky behavior (NEW — focused change)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div
       ref={containerRef}
-      className="relative flex items-center justify-between px-4 py-4 lg:px-10"
+      className={`
+        flex items-center justify-between px-4 py-4 lg:px-10
+        transition-all duration-300 z-50
+        ${
+          isSticky
+            ? "fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md"
+            : "relative"
+        }
+      `}
     >
       {/* LOGO */}
       <div>
