@@ -34,23 +34,43 @@ export default function Header() {
           <p className="text-white pb-8 flex flex-wrap justify-center lg:justify-start gap-x-4 gap-y-2">
             <span className="inline-flex items-center">
               UI / UX Design
-              <IconPoint className="text-white ml-2" stroke={5} width={18} />
+              <IconPoint
+                className="hidden lg:block text-white ml-2"
+                stroke={5}
+                width={18}
+              />
             </span>
             <span className="inline-flex items-center">
               Frontend Development
-              <IconPoint className="text-white ml-2" stroke={5} width={18} />
+              <IconPoint
+                className="hidden lg:block text-white ml-2"
+                stroke={5}
+                width={18}
+              />
             </span>
             <span className="inline-flex items-center">
               API Integration
-              <IconPoint className="text-white ml-2" stroke={5} width={18} />
+              <IconPoint
+                className="hidden lg:block text-white ml-2"
+                stroke={5}
+                width={18}
+              />
             </span>
             <span className="inline-flex items-center">
               Backend Development
-              <IconPoint className="text-white ml-2" stroke={5} width={18} />
+              <IconPoint
+                className="hidden lg:block text-white ml-2"
+                stroke={5}
+                width={18}
+              />
             </span>
             <span className="inline-flex items-center">
               Database Management
-              <IconPoint className="text-white ml-2" stroke={5} width={18} />
+              <IconPoint
+                className="hidden lg:block text-white ml-2"
+                stroke={5}
+                width={18}
+              />
             </span>
             <span>Project Collaboration</span>
           </p>

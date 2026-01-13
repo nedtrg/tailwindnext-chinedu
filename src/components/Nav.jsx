@@ -107,7 +107,7 @@ export default function Nav() {
               sm:left-auto
               sm:right-7
               w-auto
-              sm:w-24
+              sm:w-48
               p-3
               bg-gray-900
               border
